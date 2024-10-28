@@ -12,6 +12,77 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .flex1 {
+  display: flex;
+}
+.flex2 {
+  flex: 1;
+}
+
+.icon-md {
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center;
+  font-size: 1rem;
+}
+
+ /* Basic styling for the button */
+ .my-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the button itself */
+.my-dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-dropdown-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hide the dropdown content initially */
+.my-dropdown-content {
+  display: none;
+  position: absolute; 
+  top: 100%; /* Position just below the button */
+  right: 0;  /* Align to the right to prevent overflow */
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; /* Ensure the dropdown is on top */
+  border-radius: 4px;
+}
+
+/* Show the dropdown when the button is clicked (focus-within) */
+.my-dropdown:focus-within .my-dropdown-content {
+  display: block;
+}
+
+/* Style for dropdown items */
+.my-dropdown-item {
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.my-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Prevent overflow from restricting the dropdown */
+body, html {
+  overflow: visible;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

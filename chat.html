@@ -578,14 +578,21 @@
     <div class="card card-default chat-left-sidebar">
       <form class="card-header px-0">
         <div class="input-group px-5">
+          <!-- <a href=""><md-button class="md-fab md-mini mdi mdi-pencil-box-outline mdi-24px p-2"> </md-button></a> -->
+          <button type="" class="mb-1 btn btn-pill btn-success mb-2 btn-sm">New Chat</button>
+         
+        </div>
+        <div class="input-group px-5">
           <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search...">
+         
         </div>
       </form>
 
       <ul class="card-body px-0" data-simplebar style="height: 630px;">
       
 
-
+        
+        
         <li class="mb-4 px-5 py-2">
           <a href="javascript:void(0)" class="media media-message">
             <div class="position-relative mr-3">
@@ -597,13 +604,23 @@
               <div class="message-contents">
                 <span class="d-flex justify-content-between align-items-center mb-1">
                   <span class="username text-dark">Diabetes information</span>
-                  <span class="">
-                    <span class="state text-smoke"><em>10-Dec-19</em></span>
-                  </span>
-                </span>
+                  <div class="my-dropdown">
+                    <!-- Dropdown button -->
+                    <button class="my-dropdown-btn" id="my-dropdown-btn">
+                      <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="icon-md">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </button>
                 
-                <p class="last-msg text-smoke">What is Diabetes</p>
-              </div>
+                    <!-- Dropdown content -->
+                    <div class="my-dropdown-content">
+                      <div class="my-dropdown-item">Delete Chat <span class="mdi mdi-delete" style="color: rgb(177, 42, 42);"></span></div>
+                      <div class="my-dropdown-item">Edit <span class="mdi mdi-square-edit-outline"></span></div>
+                    </div>
+                  </div>
+                </span> <p class="last-msg text-smoke">What is Diabetes</p></div>
             </div>
           </a>
         </li>
@@ -619,9 +636,22 @@
               <div class="message-contents">
                 <span class="d-flex justify-content-between align-items-center mb-1">
                   <span class="username text-dark">Popular Articles</span>
-                  <span class="">
-                    <span class="state text-smoke"><em>5hrs</em></span>
-                  </span>
+                  <div class="my-dropdown">
+                    <!-- Dropdown button -->
+                    <button class="my-dropdown-btn" id="my-dropdown-btn">
+                      <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="icon-md">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </button>
+                
+                    <!-- Dropdown content -->
+                    <div class="my-dropdown-content">
+                      <div class="my-dropdown-item">Delete Chat <span class="mdi mdi-delete" style="color: rgb(177, 42, 42);"></span></div>
+                      <div class="my-dropdown-item">Edit <span class="mdi mdi-square-edit-outline"></span></div>
+                    </div>
+                  </div>
                 </span>
                 
                 <p class="last-msg text-smoke">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
@@ -642,9 +672,22 @@
               <div class="message-contents">
                 <span class="d-flex justify-content-between align-items-center mb-1">
                   <span class="username text-dark">Books about diabetes</span>
-                  <span class="">
-                    <span class="state text-smoke"><em>01-Dec-19</em></span>
-                  </span>
+                  <div class="my-dropdown">
+                    <!-- Dropdown button -->
+                    <button class="my-dropdown-btn" id="my-dropdown-btn">
+                      <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="icon-md">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </button>
+                
+                    <!-- Dropdown content -->
+                    <div class="my-dropdown-content">
+                      <div class="my-dropdown-item">Delete Chat <span class="mdi mdi-delete" style="color: rgb(177, 42, 42);"></span></div>
+                      <div class="my-dropdown-item">Edit <span class="mdi mdi-square-edit-outline"></span></div>
+                    </div>
+                  </div>
                 </span>
                 
                 <p class="last-msg text-smoke">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
@@ -663,19 +706,8 @@
     <div class="card card-default chat-right-sidebar">
       <div class="card-header">
         <h2>Chat</h2>
-
-        <div class="dropdown">
-          <div class="dropdown">
-            <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            </a>
-
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="user-profile-settings.html">Profile</a>
-              <a class="dropdown-item" href="javascript:void(0)">Logout</a>
-            </div>
-          </div>
+       
         </div>
-      </div>
 
       <div class="card-body pb-0" data-simplebar style="height: 545px;">
         <!-- Media Chat Left -->
@@ -763,11 +795,8 @@
 
       <div class="chat-footer">
         <form>
-          <div class="input-group input-group-chat">
-            <div class="input-group-prepend">
-              <span class="emoticon-icon mdi mdi-emoticon-happy-outline"></span>
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <div class="input-group-chat">
+            <p class="flex1 ">  <span class="emoticon-icon mdi mdi-emoticon-happy-outline"></span><input type="text" class="form-control flex2" placeholder=""> <button type="submit" class="btn btn-info">Send</button></p>
           </div>
         </form>
       </div>
@@ -780,11 +809,11 @@
         
           <!-- Footer -->
           <footer class="footer mt-auto">
-            <div class="copyright bg-white">
+            <!-- <div class="copyright bg-white">
               <p>
                 &copy; <span id="copy-year"></span> Copyright Mono Dashboard Bootstrap Template by <a class="text-primary" href="http://www.iamabdus.com/" target="_blank" >Abdus</a>.
               </p>
-            </div>
+            </div> -->
             <script>
                 var d = new Date();
                 var year = d.getFullYear();

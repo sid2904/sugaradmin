@@ -343,3 +343,7 @@ $(document).ready(function () {
     }
   });
 });
+
+function redirectToMain() {
+  window.location.href = "main.html";
+}
